@@ -18,5 +18,3 @@ This API serves as the backbone for:
 - SQLAlchemy (ORM)
 - Pydantic (Data validation)
 - Docker (Containerization)
-
-## Project Structure

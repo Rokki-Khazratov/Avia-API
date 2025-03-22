@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="Airline Management System API",
@@ -7,15 +6,6 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# CORS middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 @app.get("/")
 async def root():
-    return {"message": "Airline Management System API"} 
+    return {"message": "Hello World"} 
